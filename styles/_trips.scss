@@ -1,0 +1,102 @@
+.trips {
+  min-height: 92vh;
+  @include flex(column, space-around, center);
+}
+
+.trips-1 {
+  background-image: url(../img/ice-shore-gradient1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trips-3 {
+  background-image: url(../img/ice-shore-gradient2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trips-head {
+  min-height: 40vh;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  @include flex(column, center, center);
+  h2 {
+    font-size: 12rem;
+  }
+}
+
+.trips-card {
+  min-height: 40vh;
+  width: 75%;
+  background: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin-bottom: 6rem;
+  @include flex(row, space-around, center);
+
+  .t-card-img {
+    flex: 1 1 30rem;
+    max-height: 600px;
+    max-width: 600px;
+  }
+}
+
+.t-card-info {
+  min-height: 35vh;
+  /* auto flex basis will make the cards grow accordingly apparently*/
+  flex: 4 1 auto;
+  @include flex(column, space-around, center);
+  padding: 0 10rem;
+
+  h3 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: $header2;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  button {
+    margin: 3rem;
+  }
+}
+
+.t-card-text {
+  @include flex(row, center, center);
+}
+
+.t-card-text-left {
+  flex: 1 1 20rem;
+  @include flex(column, space-around, start);
+
+  h4 {
+    margin: 0 2rem;
+    font-weight: normal;
+    font-size: $text;
+  }
+}
+
+.t-icon-wrap {
+  margin: 1.5rem 0;
+  @include flex(row, center, center);
+
+  img {
+    min-width: 2.5rem;
+    height: auto;
+  }
+}
+
+.t-card-text-right {
+  padding: 1rem 0 1rem 8rem;
+  flex: 5 1 20rem;
+  border-left: 2px solid black;
+
+  ul {
+    list-style: disc;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+}

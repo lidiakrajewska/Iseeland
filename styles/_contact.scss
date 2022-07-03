@@ -1,0 +1,53 @@
+.contact {
+  min-height: 92vh;
+  background-image: url(../img/road.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex(column, center, center);
+}
+
+.form-wrapper {
+  @include flex(column, center, center);
+  background-color: $bg-color-trans;
+  color: white;
+  padding: 4rem 10rem;
+  min-width: 35%;
+
+  .form-head {
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+  form {
+    @include flex(column, center, center);
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    margin: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    width: 70%;
+
+    &:focus {
+      outline: 2px solid $light-color;
+    }
+  }
+
+  textarea {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 1rem 10rem;
+    margin-top: 2rem;
+    width: 70%;
+  }
+}

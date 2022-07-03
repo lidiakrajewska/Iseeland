@@ -1,0 +1,25 @@
+footer {
+  min-height: 10vh;
+  background: $bg-color;
+  color: white;
+  @include flex(row, center, center);
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin: 2rem auto;
+  @include flex(row, center, center);
+
+  .foot-info {
+    flex: 5 1 40rem;
+    h4 {
+      margin-bottom: 1rem;
+      font-family: 'Julius Sans One', sans-serif;
+    }
+  }
+
+  ul {
+    flex: 1 1 40rem;
+    @include flex(row, space-between, center);
+  }
+}

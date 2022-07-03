@@ -1,0 +1,1057 @@
+/* Variables */
+/* Mixins */
+/* All style files - media file should be at the end! */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 8vh;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2.5rem;
+}
+
+p,
+a,
+li,
+button,
+label,
+input {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 1.5rem;
+  background-color: #eab44b;
+  color: #334053;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+button:hover {
+  background-color: #f0d57e;
+}
+
+.main-head {
+  background: #334053;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  margin: 1rem 0rem;
+}
+
+nav #logo h1 {
+  margin: 2rem;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 50rem;
+          flex: 2 1 50rem;
+}
+
+nav li {
+  margin: 0 2rem;
+}
+
+nav .book-button {
+  background-color: #bcfbff;
+  color: #334053;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+nav .book-button:hover {
+  background-color: #8bcbdb;
+}
+
+footer {
+  min-height: 10vh;
+  background: #334053;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrapper .foot-info {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 40rem;
+          flex: 5 1 40rem;
+}
+
+.footer-wrapper .foot-info h4 {
+  margin-bottom: 1rem;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.footer-wrapper ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  min-height: 92vh;
+  background: url(../img/green-valley.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-text {
+  background: rgba(51, 64, 83, 0.6);
+  padding: 5rem;
+  margin: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-text h2,
+.hero-text h3 {
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.hero-text h2 {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.hero-text h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-text button {
+  font-size: 2rem;
+}
+
+.hero-text button:hover {
+  cursor: pointer;
+}
+
+.hero-text button a {
+  color: #334053;
+}
+
+.mission {
+  min-height: 92vh;
+  width: 80%;
+  margin: auto;
+}
+
+.mission .mission-head {
+  font-family: 'Julius Sans One', sans-serif;
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.m-card {
+  min-height: 60vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 3rem 3rem;
+  padding: 4rem 3rem;
+}
+
+.m-card-icon {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-card-text h3 {
+  padding: 4rem;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.about {
+  min-height: 92vh;
+  background-image: url(../img/ice-sea.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about-head {
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  line-height: 7rem;
+}
+
+.about-head span {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.about-text {
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.about-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #334053;
+}
+
+.trips {
+  min-height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trips-1 {
+  background-image: url(../img/ice-shore-gradient1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trips-3 {
+  background-image: url(../img/ice-shore-gradient2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trips-head {
+  min-height: 40vh;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trips-head h2 {
+  font-size: 12rem;
+}
+
+.trips-card {
+  min-height: 40vh;
+  width: 75%;
+  background: white;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trips-card .t-card-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.t-card-info {
+  min-height: 35vh;
+  /* auto flex basis will make the cards grow accordingly apparently*/
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 auto;
+          flex: 4 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10rem;
+}
+
+.t-card-info h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.t-card-info button {
+  margin: 3rem;
+}
+
+.t-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-card-text-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.t-card-text-left h4 {
+  margin: 0 2rem;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.t-icon-wrap {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-icon-wrap img {
+  min-width: 2.5rem;
+  height: auto;
+}
+
+.t-card-text-right {
+  padding: 1rem 0 1rem 8rem;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 20rem;
+          flex: 5 1 20rem;
+  border-left: 2px solid black;
+}
+
+.t-card-text-right ul {
+  list-style: disc;
+}
+
+.t-card-text-right ul li {
+  margin: 1rem 0;
+}
+
+.credits {
+  min-height: 82vh;
+  background: url("../img/ice-shore2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credits-wrapper {
+  position: relative;
+}
+
+.credits-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.credits-text h2 {
+  margin-bottom: 2rem;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.credits-text a {
+  color: black;
+}
+
+.contact {
+  min-height: 92vh;
+  background-image: url(../img/road.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(51, 64, 83, 0.6);
+  color: white;
+  padding: 4rem 10rem;
+  min-width: 35%;
+}
+
+.form-wrapper .form-head {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-wrapper .form-head h2 {
+  margin-bottom: 1.5rem;
+}
+
+.form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  margin: 2rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+  outline: 2px solid #bcfbff;
+}
+
+.form-wrapper textarea {
+  font-size: 2rem;
+}
+
+.form-wrapper button {
+  padding: 1rem 10rem;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.booking {
+  min-height: 92vh;
+  background: url("../img/road-green.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-select {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem;
+  margin-top: 0.5rem;
+  width: 70%;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.custom-select::after {
+  /* An arrow in select */
+  content: "\25BC";
+  position: absolute;
+  color: #334053;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1770px) {
+  /* trips cards */
+  .trips-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trips-card .t-card-img {
+    margin-top: 3rem;
+  }
+  .t-card-info {
+    padding: 0rem 5rem;
+  }
+  .t-card-info h3 {
+    padding: 3rem 0rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 60%;
+  }
+  /* cards on the main page */
+  .mission {
+    width: 90%;
+  }
+  .m-card {
+    min-height: 45vh;
+  }
+  .m-card-icon {
+    min-height: 10vh;
+  }
+  /* trips cards */
+  .t-card-info {
+    padding: 0rem 3rem;
+  }
+  /* contact page */
+  .form-wrapper {
+    min-width: 80%;
+  }
+  .form-wrapper input,
+  .form-wrapper textarea,
+  .form-wrapper button {
+    width: 80%;
+  }
+  /* booking page */
+  .booking .custom-select {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Navigation bar */
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: white;
+    margin: 0.5rem 0rem;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav-links {
+    background: #334053;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+    padding: 10rem 0rem;
+  }
+  .nav-links a {
+    font-size: 4.2rem;
+  }
+  .nav-open {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .toggle .line1 {
+    -webkit-transform: rotateZ(45deg) translateY(300%);
+            transform: rotateZ(45deg) translateY(300%);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotateZ(-45deg) translateY(-300%);
+            transform: rotateZ(-45deg) translateY(-300%);
+  }
+  /* About section */
+  .about-head {
+    margin: 5rem 3rem 3rem 3rem;
+  }
+  .about-head span {
+    font-size: 2rem;
+  }
+  .about-head h2 {
+    font-size: 3rem;
+  }
+  /* trips cards */
+  .trips-card .t-card-img {
+    margin: 3rem;
+  }
+  .t-card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .t-card-text-left {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0rem 30%;
+  }
+  .t-card-text-right {
+    border-left: none;
+    padding: 3rem 3rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+    text-align: center;
+  }
+  /* contact page */
+  .form-wrapper {
+    padding: 4rem 5rem;
+    min-width: 80%;
+  }
+  .form-wrapper input,
+  .form-wrapper textarea,
+  .form-wrapper button {
+    width: 90%;
+  }
+  /* booking page */
+  .booking .custom-select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 50%;
+  }
+  /* trips cards */
+  .trips-card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* trips cards */
+  .trips-card {
+    width: 85%;
+  }
+  .trips-card .t-card-img {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #logo img {
+    max-width: 5rem;
+    height: auto;
+  }
+  footer h4 {
+    font-size: 2rem;
+  }
+  /* main page */
+  .about-head {
+    line-height: 1.5;
+  }
+  .white-circle {
+    max-width: 350px;
+    height: auto;
+  }
+  /* trips cards */
+  .trips-head h2 {
+    font-size: 8rem;
+  }
+  .trips-card {
+    width: 90%;
+  }
+  .trips-card .t-card-img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .t-card-text-left {
+    padding: 0rem 25%;
+  }
+  /* contact page */
+  .contact {
+    background: none;
+  }
+  .form-wrapper {
+    background: none;
+    color: #334053;
+  }
+  /* booking page */
+  .booking {
+    background: url("");
+  }
+}
+/*# sourceMappingURL=style.css.map */

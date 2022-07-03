@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Iseeland is a travel agency specialising in tours around Iceland."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../icons/iceberg.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Iseeland | Explore Iceland</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div id="logo">
+          <img src="../icons/iceberg.png" alt="Iseeland logo" />
+          <a href="../"><h1>Iseeland</h1></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../">Mission</a></li>
+          <li><a href="../trips/">Trips</a></li>
+          <li><a href="./">Contact Us</a></li>
+          <li><a href="../booking/" class="book-button">Book Your Trip</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="form-wrapper">
+          <header class="form-head">
+            <h2>Have any questions?</h2>
+            <h3>Contact Us</h3>
+          </header>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="foot-info">
+          <h4>Iseeland &copy; 2021</h4>
+          <a href="../credits/">Credits</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../icons/youtube.svg" alt="youtube-social" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/twitter.svg" alt="twitter-social" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/instagram.svg" alt="instagram-social" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../app.js"></script>
+  </body>
+</html>

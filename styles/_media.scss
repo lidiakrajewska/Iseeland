@@ -1,0 +1,227 @@
+@media screen and (max-width: 1770px) {
+  /* trips cards */
+  .trips-card {
+    @include flex(column, space-around, center);
+    .t-card-img {
+      margin-top: 3rem;
+    }
+  }
+  .t-card-info {
+    padding: 0rem 5rem;
+    h3 {
+      padding: 3rem 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 60%;
+  }
+
+  /* cards on the main page */
+  .mission {
+    width: 90%;
+  }
+  .m-card {
+    min-height: 45vh;
+  }
+  .m-card-icon {
+    min-height: 10vh;
+  }
+
+  /* trips cards */
+  .t-card-info {
+    padding: 0rem 3rem;
+  }
+
+  /* contact page */
+  .form-wrapper {
+    min-width: 80%;
+    input,
+    textarea,
+    button {
+      width: 80%;
+    }
+  }
+
+  /* booking page */
+  .booking .custom-select {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Navigation bar */
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: white;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    background: $bg-color;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    @include flex(column, space-around, center);
+    transition: transform 1s ease;
+    padding: 10rem 0rem;
+  }
+
+  .nav-links a {
+    font-size: $header2;
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+  }
+
+  /* About section */
+  .about-head {
+    margin: 5rem 3rem 3rem 3rem;
+
+    span {
+      font-size: $text;
+    }
+    h2 {
+      font-size: $header3;
+    }
+  }
+
+  /* trips cards */
+  .trips-card .t-card-img {
+    margin: 3rem;
+  }
+
+  .t-card-text {
+    @include flex(column, center, center);
+  }
+
+  .t-card-text-left {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0rem 30%;
+  }
+
+  .t-card-text-right {
+    border-left: none;
+    padding: 3rem 3rem;
+    flex: 1 1 30rem;
+    text-align: center;
+  }
+  /* contact page */
+  .form-wrapper {
+    padding: 4rem 5rem;
+    min-width: 80%;
+    input,
+    textarea,
+    button {
+      width: 90%;
+    }
+  }
+
+  /* booking page */
+  .booking .custom-select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* trips cards */
+  .trips-card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* trips cards */
+  .trips-card {
+    width: 85%;
+    .t-card-img {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      max-height: 300px;
+      max-width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #logo img {
+    max-width: 5rem;
+    height: auto;
+  }
+
+  footer h4 {
+    font-size: $text;
+  }
+
+  /* main page */
+  .about-head {
+    line-height: 1.5;
+  }
+
+  .white-circle {
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* trips cards */
+  .trips-head {
+    h2 {
+      font-size: 8rem;
+    }
+  }
+  .trips-card {
+    width: 90%;
+    .t-card-img {
+      max-width: 250px;
+      max-height: 250px;
+    }
+  }
+  .t-card-text-left {
+    padding: 0rem 25%;
+  }
+
+  /* contact page */
+  .contact {
+    background: none;
+  }
+
+  .form-wrapper {
+    background: none;
+    color: $bg-color;
+  }
+
+  /* booking page */
+  .booking {
+    background: url("");
+  }
+}

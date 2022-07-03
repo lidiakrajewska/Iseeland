@@ -1,0 +1,46 @@
+.main-head {
+  background: $bg-color;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  min-height: 8vh;
+  @include flex(row, space-between, center);
+
+  #logo {
+    @include flex(row, start, center);
+    flex: 1 1 20rem;
+    margin: 1rem 0rem;
+    h1 {
+      margin: 2rem;
+      color: white;
+      font-family: 'Julius Sans One', sans-serif;
+    }
+  }
+
+  ul {
+    @include flex(row, end, center);
+    flex: 2 1 50rem;
+  }
+
+  li {
+    margin: 0 2rem;
+  }
+
+  .book-button {
+    background-color: $light-color;
+    color: $bg-color;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: #8bcbdb;
+    }
+  }
+}

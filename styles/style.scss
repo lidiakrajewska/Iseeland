@@ -1,0 +1,31 @@
+/* Variables */
+$header1: 2.4rem;
+$header2: 4.2rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$text: 2rem;
+$bg-color: #334053;
+$bg-color-trans: rgba(51, 64, 83, 0.6);
+$light-color: #bcfbff;
+$accent-color: #eab44b;
+
+/* Mixins */
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* All style files - media file should be at the end! */
+@import "global";
+@import "nav";
+@import "footer";
+@import "hero";
+@import "mission";
+@import "about";
+@import "trips";
+@import "credits";
+@import "contact";
+@import "booking";
+@import "media";

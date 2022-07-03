@@ -1,0 +1,41 @@
+.booking {
+  min-height: 92vh;
+  background: url("../img/road-green.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include flex(column, center, center);
+}
+
+.custom-select {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem;
+  margin-top: 0.5rem;
+  width: 70%;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: $text;
+    width: 100%;
+  }
+
+  &::after {
+    /* An arrow in select */
+    content: "\25BC";
+    position: absolute;
+    color: $bg-color;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Iseeland is a travel agency specialising in tours around Iceland."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../icons/iceberg.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Iseeland | Explore Iceland</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div id="logo">
+          <img src="../icons/iceberg.png" alt="Iseeland logo" />
+          <a href="../"><h1>Iseeland</h1></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../">Mission</a></li>
+          <li><a href="../trips/">Trips</a></li>
+          <li><a href="../contact/">Contact Us</a></li>
+          <li><a href="./" class="book-button">Book Your Trip</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="booking">
+        <div class="form-wrapper">
+          <div class="form-head">
+            <h2>Want an adventure?</h2>
+            <h3>Book yours now!</h3>
+          </div>
+          <form>
+            <label for="trip-select">Choose your trip:</label>
+            <div class="custom-select">
+              <select name="trip-select" id="trip-select">
+                <option value="Mysterious Fjord’s Tale">Mysterious Fjord’s Tale</option>
+                <option value="Whispering Waterfalls Trail">Whispering Waterfalls Trail</option>
+                <option value="Wild Horses Road">Wild Horses Road</option>
+                <option value="Diamond Ice Kingdom">Diamond Ice Kingdom</option>
+                <option value="Queen Aurora’s Lullaby">Queen Aurora’s Lullaby</option>
+              </select>
+            </div>
+            <label for="book-name">Name:</label>
+            <input name="book-name" id="book-name" type="text" required autocomplete="off">
+            <label for="book-email">Email:</label>
+            <input name="book-email" id="book-email" type="email" required autocomplete="off">
+            <button type="submit">Book my adventure</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="foot-info">
+          <h4>
+            Iseeland &copy; 2021
+          </h4>
+          <a href="../credits/">Credits</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../icons/youtube.svg" alt="youtube-social" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/twitter.svg" alt="twitter-social" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/instagram.svg" alt="instagram-social" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../app.js"></script>
+  </body>
+</html>

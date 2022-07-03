@@ -1,0 +1,26 @@
+.credits {
+  min-height: 82vh;
+  background: url("../img/ice-shore2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex(column, center, center);
+}
+
+.credits-wrapper {
+  position: relative;
+}
+
+.credits-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  h2 {
+    margin-bottom: 2rem;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  a {
+    color: black;
+  }
+}

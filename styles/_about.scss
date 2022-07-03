@@ -1,0 +1,33 @@
+.about {
+  min-height: 92vh;
+  background-image: url(../img/ice-sea.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include flex(column, space-around, center);
+  text-align: center;
+}
+
+.about-head {
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  line-height: 7rem;
+  span {
+    font-size: $header3;
+    letter-spacing: 1rem;
+  }
+}
+
+.about-text {
+  position: relative;
+  margin-bottom: 10rem;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $bg-color;
+  }
+}

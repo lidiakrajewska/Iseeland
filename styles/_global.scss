@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 8vh;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: $header1;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4,
+h5 {
+  font-size: $header4;
+}
+
+p,
+a,
+li,
+button,
+label,
+input {
+  font-size: $text;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 1.5rem;
+  background-color: $accent-color;
+  color: $bg-color;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  transition: all 1s ease;
+
+  &:hover {
+    background-color: #f0d57e;
+  }
+}
